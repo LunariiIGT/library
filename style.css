@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+
+    font-family: 'Poppins';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #121212;
+    margin: 0;
+    color: white;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.title {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+label {
+    font-size: 2.15rem;
+    margin-right: 4.2rem;
+}
+
+.upperForm {
+    display: flex;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+input {
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    color: rgb(247, 248, 248);
+    height: 3.6rem;
+    appearance: none;
+    transition: all 0.15s ease 0s;
+    margin-right: 1.2rem;
+}
+    input:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: rgb(100, 153, 255);
+    }
+
+#page-number {
+    width: 8.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    
+select {
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    color: rgb(247, 248, 248);
+    height: 3.6rem;
+    appearance: none;
+    transition: all 0.15s ease 0s;
+    margin-right: 1.2rem;
+}
+    select:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: rgb(100, 153, 255);
+    }
+
+.labelAuthor {
+    margin-left: 15rem;
+}
+
+.labelPages {
+    margin-left: 12.5rem;
+    margin-right: 0;
+}
+
+.labelStatus {
+    margin-left: 3.2rem;
+}
+
+.book-add {
+    background: rgb(52, 54, 59);
+    cursor: pointer;
+}
+
+.book-add:hover {
+    background: rgb(62, 65, 71);
+    scale: 1.1;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.book_Title {
+    display: block;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: .2rem;
+  }
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 2rem 2rem;
+    padding-left: 3rem;
+    padding-bottom: 4rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 0.8rem;
+    background: rgb(31, 32, 35);
+    line-height: 1.2;
+    text-align: center;
+    overflow: hidden;
+}
+
+.book_Pages,
+.book_Author,
+.book_Title {
+    font-weight: 400;
+}
+
+.book_Author {
+    font-style:italic;
+}
+
+.book_Pages{
+    margin-bottom: 1.2rem;
+}
+
+.book_Status,
+.removeButton {
+    padding: 6px 12px;
+    background: rgb(52, 54, 59);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    color: rgb(247, 248, 248);
+    height: 4rem;
+    appearance: none;
+    transition: all 0.15s ease 0s;
+    margin-right: 1.2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+.book_Status:hover,
+.removeButton:hover {
+        outline: none;
+        box-shadow: none;
+        scale: 1.05;
+    }
+
+.removeButton:hover {
+        background: rgb(62, 65, 71);
+    }
+
+.books {
+    margin-bottom: 2rem;
+}
+
+.read {
+    background: #9FFF9C;
+    color: #121212;
+}
+
+.not-read {
+    background: #FF9C9C;
+    color: #080808;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+<div class="container"></div>
+    <h1 class="title">My Library</h1>
+
+    <form method="get" class="form">
+        <div class="upperForm">
+            <label class="labelTitle" for="book">Book</label>
+            <label class="labelAuthor" for="author">Author</label>
+            <label class="labelPages" for="page-number">Pages</label>
+            <label class="labelStatus" for="status-select">Status</label>
+        </div>
+
+        <div class="bottomrForm">
+            <input type="text" id="book" required>
+            <input type="text" id="author" required>
+            <input type="number" id="page-number" required>
+            <select name="status" id="status-select" required>
+                <option value=""></option>
+                <option value="read">Read</option>
+                <option value="not-read">Not Read</option>
+              </select>    
+
+        <input type="submit" value="Add Book" class="book-add">
+    </form>
+    </div>
+
+    <div class="books"></div>
+    
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
